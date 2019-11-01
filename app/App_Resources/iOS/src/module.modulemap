@@ -1,0 +1,4 @@
+module NativeLogger {
+    header "NativeLogger.h"
+    export *
+}

@@ -1,0 +1,56 @@
+
+################### Native Log API #############
+11-01 10:36:20.315 32557 32557 I JS      : NativeScript Native info log
+11-01 10:36:20.315 32557 32557 D JS      : NativeScript Native debug log
+11-01 10:36:20.315 32557 32557 E JS      : NativeScript Native error log
+11-01 10:36:20.315 32557 32557 W JS      : NativeScript Native warning log
+11-01 10:36:20.315 32557 32557 V JS      : NativeScript Native verbose log
+
+################### Console API ################
+
+11-01 10:36:24.068 32557 32557 E JS      : Assertion failed:  NativeScript Test assert
+11-01 10:36:24.068 32557 32557 I JS      : ==== object dump start ====
+11-01 10:36:24.068 32557 32557 I JS      : test: "NativeScript test console.dir"
+11-01 10:36:24.068 32557 32557 I JS      : ==== object dump end ====
+11-01 10:36:24.068 32557 32557 E JS      : NativeScript Test console.error
+11-01 10:36:24.068 32557 32557 I JS      : NativeScript Test console.info
+11-01 10:36:24.068 32557 32557 I JS      : NativeScript Test console.log
+11-01 10:36:24.068 32557 32557 I JS      : NativeScript Test console.time: 0.00ms
+11-01 10:36:24.068 32557 32557 E JS      : Trace: NativeScript Test console.trace
+11-01 10:36:24.068 32557 32557 E JS      : at module.exports.push../main-view-model.ts.HelloWorldModel.logFromConsole (file:///data/data/org.nativescript.deviceLog/files/app/bundle.js:298:17)
+11-01 10:36:24.068 32557 32557 E JS      : at push.../node_modules/tns-core-modules/data/observable/observable.js.Observable.notify (file:///data/data/org.nativescript.deviceLog/files/app/vendor.js:8421:32)
+11-01 10:36:24.068 32557 32557 E JS      : at push.../node_modules/tns-core-modules/data/observable/observable.js.Observable._emit (file:///data/data/org.nativescript.deviceLog/files/app/vendor.js:8441:18)
+11-01 10:36:24.068 32557 32557 E JS      : at ClickListenerImpl.onClick (file:///data/data/org.nativescript.deviceLog/files/app/vendor.js:19066:23)
+11-01 10:36:24.068 32557 32557 W JS      : NativeScript Test console.warn
+
+
+#################### JS error ##################
+
+11-01 10:51:46.756   350   350 D AndroidRuntime: Shutting down VM
+11-01 10:51:46.762   350   350 W System.err: An uncaught Exception occurred on "main" thread.
+11-01 10:51:46.762   350   350 W System.err: Calling js method onClick failed
+11-01 10:51:46.762   350   350 W System.err: Error: NativeScript Test js error.
+11-01 10:51:46.762   350   350 W System.err: 
+11-01 10:51:46.762   350   350 W System.err: StackTrace:
+11-01 10:51:46.762   350   350 W System.err: 	module.exports.push../main-view-model.ts.HelloWorldModel.throwFromJs(file:///data/data/org.nativescript.deviceLog/files/app/bundle.js:308:15)
+11-01 10:51:46.762   350   350 W System.err: 	at push.../node_modules/tns-core-modules/data/observable/observable.js.Observable.notify(file:///data/data/org.nativescript.deviceLog/files/app/vendor.js:8421:32)
+11-01 10:51:46.764   350   350 W System.err: 	at push.../node_modules/tns-core-modules/data/observable/observable.js.Observable._emit(file:///data/data/org.nativescript.deviceLog/files/app/vendor.js:8441:18)
+11-01 10:51:46.764   350   350 W System.err: 	at ClickListenerImpl.onClick(file:///data/data/org.nativescript.deviceLog/files/app/vendor.js:19066:23)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.Runtime.callJSMethodNative(Native Method)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.Runtime.dispatchCallJSMethodNative(Runtime.java:1209)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.Runtime.callJSMethodImpl(Runtime.java:1096)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.Runtime.callJSMethod(Runtime.java:1083)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.Runtime.callJSMethod(Runtime.java:1063)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.Runtime.callJSMethod(Runtime.java:1055)
+11-01 10:51:46.764   350   350 W System.err: 	at com.tns.gen.java.lang.Object_vendor_19059_32_ClickListenerImpl.onClick(Object_vendor_19059_32_ClickListenerImpl.java:18)
+11-01 10:51:46.764   350   350 W System.err: 	at android.view.View.performClick(View.java:5637)
+11-01 10:51:46.764   350   350 W System.err: 	at android.view.View$PerformClick.run(View.java:22429)
+11-01 10:51:46.764   350   350 W System.err: 	at android.os.Handler.handleCallback(Handler.java:751)
+11-01 10:51:46.764   350   350 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+11-01 10:51:46.764   350   350 W System.err: 	at android.os.Looper.loop(Looper.java:154)
+11-01 10:51:46.764   350   350 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6119)
+11-01 10:51:46.764   350   350 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 10:51:46.764   350   350 W System.err: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+11-01 10:51:46.764   350   350 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+
+
